@@ -160,7 +160,7 @@ python3 -m venv .venv && .venv/bin/pip install astropy numpy pillow
 
 ## 4. Results
 
-<a id="a1"></a>
+<span id="a1"></span>
 
 ### A1 — STEREO-A EUVI 195 Å, 2010-04-25 (middle-right green blob)
 
@@ -239,7 +239,7 @@ remaining doubt is that a single exposure cannot rule out every rare
 alternative, such as a brief point-like glint from debris. Such an event
 would be unusual for an EUV imager.
 
-<a id="a2"></a>
+<span id="a2"></span>
 
 ### A2 — SDO/AIA 335 Å, 2013-02-24 (upper-right blue streak)
 
@@ -303,7 +303,7 @@ contains the brightest pixels of the frame, and was almost entirely
 flagged by the AIA despiking algorithm, which was designed to find
 particle hits.
 
-<a id="a3"></a>
+<span id="a3"></span>
 
 ### A3 — SDO/AIA 193 Å, 2017-06-20 (upper-left orange blob and streak)
 
@@ -345,7 +345,7 @@ Data: JSOC `aia.lev1_euv_12s`, T_OBS 2017-06-20T12:56:17.843 [[21](#ref-21)]
 **Classification:** Energetic-particle hit with a column-direction trail.
 **Confidence: 92–98 %.**
 
-<a id="a4"></a>
+<span id="a4"></span>
 
 ### A4a / A4b — SDO/AIA 304/211/171 composite, 2019-06-28 (upper-left and lower-left red blobs and streaks)
 
@@ -537,28 +537,28 @@ A2's browse-image trail of about 490 px would be an object roughly
 
 ## References
 
-1. <a id="ref-1"></a>STEREO Science Center, "Image artifacts." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts.shtml>
-2. <a id="ref-2"></a>STEREO Science Center, "Image artifacts – Beacon data." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_beacon.shtml>
-3. <a id="ref-3"></a>STEREO Science Center, "Image artifacts – Stars, planets, and comets." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_planets.shtml>
-4. <a id="ref-4"></a>STEREO Science Center, "Image artifacts – Background subtraction." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_background.shtml>
-5. <a id="ref-5"></a>STEREO Science Center, "Image artifacts – Cosmic rays." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_cosmic_rays.shtml>
-6. <a id="ref-6"></a>STEREO Science Center, "Image artifacts – Debris." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_debris.shtml>
-7. <a id="ref-7"></a>STEREO Science Center, "Image artifacts – Telescope and camera defects." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_camera.shtml>
-8. <a id="ref-8"></a>STEREO Science Center, "Image artifacts – Spacecraft rolls." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_rolls.shtml>
-9. <a id="ref-9"></a>STEREO Science Center, "Image artifacts – Internal reflections." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_reflections.shtml>
-10. <a id="ref-10"></a>STEREO Science Center, "Image artifacts – Corrupted and blank images." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_corrupted.shtml>
-11. <a id="ref-11"></a>Hill, S. (2019), "Artifacts and Other Imaging Anomalies Taken by NASA's Solar Imagers," NASA *The Sun Spot* blog. <https://science.nasa.gov/blogs/the-sun-spot/2019/02/08/artifacts-and-other-imaging-anomalies-taken-by-nasas-solar-imagers/>
-12. <a id="ref-12"></a>Lemen, J. R., Title, A. M., Akin, D. J., Boerner, P. F., et al. (2012), "The Atmospheric Imaging Assembly (AIA) on the Solar Dynamics Observatory (SDO)," *Solar Physics* 275, 17–40. <https://doi.org/10.1007/s11207-011-9776-8>
-13. <a id="ref-13"></a>Boerner, P., Edwards, C., Lemen, J., Rausch, A., et al. (2012), "Initial Calibration of the Atmospheric Imaging Assembly (AIA) on the Solar Dynamics Observatory (SDO)," *Solar Physics* 275, 41–66. <https://doi.org/10.1007/s11207-011-9804-8>
-14. <a id="ref-14"></a>Clapp, M., Lang, J., Pool, P., Morris, D., et al. (2017), "Systems approach to the design of the CCD sensors and camera electronics for the AIA and HMI instruments on Solar Dynamics Observatory," *Proc. SPIE* 10565 (ICSO 2010). <https://doi.org/10.1117/12.2309196>
-15. <a id="ref-15"></a>Young, P. R., Viall, N. M., Kirk, M. S., Mason, E. I., Chitta, L. P. (2021), "An Analysis of Spikes in Atmospheric Imaging Assembly (AIA) Data," *Solar Physics* 296, 181. <https://doi.org/10.1007/s11207-021-01929-8> (arXiv: <https://arxiv.org/abs/2108.02624>)
-16. <a id="ref-16"></a>Wuelser, J.-P., et al. (2007), EUVI status presentation, STEREO Science Working Group, March 2007. <https://stereoftp.nascom.nasa.gov/meetings/SWG/SWG_Mar_2007/wuelser/swg.pdf>
-17. <a id="ref-17"></a>Howard, R. A. (2010), SECCHI status report, STEREO Science Working Group, 23 March 2010. <https://stereo.nascom.nasa.gov/meetings/SWG/SWG_Mar_2010/swg_secchi_status_20100323_howard.pdf>
-18. <a id="ref-18"></a>Wuelser, J.-P., Lemen, J. R., Tarbell, T. D., Wolfson, C. J., et al. (2004), "EUVI: the STEREO-SECCHI extreme ultraviolet imager," *Proc. SPIE* 5171, 111. <https://doi.org/10.1117/12.506877>; see also Howard, R. A., et al. (2008), "Sun Earth Connection Coronal and Heliospheric Investigation (SECCHI)," *Space Science Reviews* 136, 67–115. <https://doi.org/10.1007/s11214-008-9341-4>
-19. <a id="ref-19"></a>Townsley, L. K., Broos, P. S., Nousek, J. A., Garmire, G. P. (2002), "Modeling charge transfer inefficiency in the Chandra Advanced CCD Imaging Spectrometer," *Nuclear Instruments and Methods in Physics Research A* 486, 751–784. <https://doi.org/10.1016/S0168-9002(01)02156-8>
-20. <a id="ref-20"></a>STEREO Science Center, SECCHI Level-0 data archive, EUVI-A file `20100425_111030_n4euA.fts`. <https://stereo-ssc.nascom.nasa.gov/data/ins_data/secchi/L0/a/img/euvi/20100425/20100425_111030_n4euA.fts>
-21. <a id="ref-21"></a>Joint Science Operations Center (JSOC), Stanford University, SDO/AIA data series `aia.lev1_euv_12s`, image and spikes segments for records 78809615, 78809622 and 78809629 (335 Å, 2013-02-24), 157692406 (193 Å, 2017-06-20) and 194794212 (304 Å, 2019-06-28). Exported via <http://jsoc.stanford.edu/ajax/exportdata.html>
-22. <a id="ref-22"></a>aiapy documentation, `aiapy.calibrate.respike`. <https://aiapy.readthedocs.io/en/stable/api/aiapy.calibrate.respike.html>
-23. <a id="ref-23"></a>Boyle, A. (2003), "Scientists show how to make a UFO," msnbc.com / NBC News, 24 January 2003. <https://www.nbcnews.com/id/wbna3077760>
-24. <a id="ref-24"></a>Wolchover, N. (2012), "UFO Spaceship Orbiting the Sun, or a Camera Glitch?," Life's Little Mysteries / Live Science, republished by NBC News, 26 April 2012. <https://www.nbcnews.com/news/amp/wbna47190227>
-25. <a id="ref-25"></a>STEREO Science Center, "Triangular shaped object in STEREO data explained." <https://stereo-ssc.nascom.nasa.gov/artifacts/triangle/index.shtml>
+1. <span id="ref-1"></span>STEREO Science Center, "Image artifacts." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts.shtml>
+2. <span id="ref-2"></span>STEREO Science Center, "Image artifacts – Beacon data." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_beacon.shtml>
+3. <span id="ref-3"></span>STEREO Science Center, "Image artifacts – Stars, planets, and comets." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_planets.shtml>
+4. <span id="ref-4"></span>STEREO Science Center, "Image artifacts – Background subtraction." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_background.shtml>
+5. <span id="ref-5"></span>STEREO Science Center, "Image artifacts – Cosmic rays." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_cosmic_rays.shtml>
+6. <span id="ref-6"></span>STEREO Science Center, "Image artifacts – Debris." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_debris.shtml>
+7. <span id="ref-7"></span>STEREO Science Center, "Image artifacts – Telescope and camera defects." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_camera.shtml>
+8. <span id="ref-8"></span>STEREO Science Center, "Image artifacts – Spacecraft rolls." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_rolls.shtml>
+9. <span id="ref-9"></span>STEREO Science Center, "Image artifacts – Internal reflections." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_reflections.shtml>
+10. <span id="ref-10"></span>STEREO Science Center, "Image artifacts – Corrupted and blank images." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts_corrupted.shtml>
+11. <span id="ref-11"></span>Hill, S. (2019), "Artifacts and Other Imaging Anomalies Taken by NASA's Solar Imagers," NASA *The Sun Spot* blog. <https://science.nasa.gov/blogs/the-sun-spot/2019/02/08/artifacts-and-other-imaging-anomalies-taken-by-nasas-solar-imagers/>
+12. <span id="ref-12"></span>Lemen, J. R., Title, A. M., Akin, D. J., Boerner, P. F., et al. (2012), "The Atmospheric Imaging Assembly (AIA) on the Solar Dynamics Observatory (SDO)," *Solar Physics* 275, 17–40. <https://doi.org/10.1007/s11207-011-9776-8>
+13. <span id="ref-13"></span>Boerner, P., Edwards, C., Lemen, J., Rausch, A., et al. (2012), "Initial Calibration of the Atmospheric Imaging Assembly (AIA) on the Solar Dynamics Observatory (SDO)," *Solar Physics* 275, 41–66. <https://doi.org/10.1007/s11207-011-9804-8>
+14. <span id="ref-14"></span>Clapp, M., Lang, J., Pool, P., Morris, D., et al. (2017), "Systems approach to the design of the CCD sensors and camera electronics for the AIA and HMI instruments on Solar Dynamics Observatory," *Proc. SPIE* 10565 (ICSO 2010). <https://doi.org/10.1117/12.2309196>
+15. <span id="ref-15"></span>Young, P. R., Viall, N. M., Kirk, M. S., Mason, E. I., Chitta, L. P. (2021), "An Analysis of Spikes in Atmospheric Imaging Assembly (AIA) Data," *Solar Physics* 296, 181. <https://doi.org/10.1007/s11207-021-01929-8> (arXiv: <https://arxiv.org/abs/2108.02624>)
+16. <span id="ref-16"></span>Wuelser, J.-P., et al. (2007), EUVI status presentation, STEREO Science Working Group, March 2007. <https://stereoftp.nascom.nasa.gov/meetings/SWG/SWG_Mar_2007/wuelser/swg.pdf>
+17. <span id="ref-17"></span>Howard, R. A. (2010), SECCHI status report, STEREO Science Working Group, 23 March 2010. <https://stereo.nascom.nasa.gov/meetings/SWG/SWG_Mar_2010/swg_secchi_status_20100323_howard.pdf>
+18. <span id="ref-18"></span>Wuelser, J.-P., Lemen, J. R., Tarbell, T. D., Wolfson, C. J., et al. (2004), "EUVI: the STEREO-SECCHI extreme ultraviolet imager," *Proc. SPIE* 5171, 111. <https://doi.org/10.1117/12.506877>; see also Howard, R. A., et al. (2008), "Sun Earth Connection Coronal and Heliospheric Investigation (SECCHI)," *Space Science Reviews* 136, 67–115. <https://doi.org/10.1007/s11214-008-9341-4>
+19. <span id="ref-19"></span>Townsley, L. K., Broos, P. S., Nousek, J. A., Garmire, G. P. (2002), "Modeling charge transfer inefficiency in the Chandra Advanced CCD Imaging Spectrometer," *Nuclear Instruments and Methods in Physics Research A* 486, 751–784. <https://doi.org/10.1016/S0168-9002(01)02156-8>
+20. <span id="ref-20"></span>STEREO Science Center, SECCHI Level-0 data archive, EUVI-A file `20100425_111030_n4euA.fts`. <https://stereo-ssc.nascom.nasa.gov/data/ins_data/secchi/L0/a/img/euvi/20100425/20100425_111030_n4euA.fts>
+21. <span id="ref-21"></span>Joint Science Operations Center (JSOC), Stanford University, SDO/AIA data series `aia.lev1_euv_12s`, image and spikes segments for records 78809615, 78809622 and 78809629 (335 Å, 2013-02-24), 157692406 (193 Å, 2017-06-20) and 194794212 (304 Å, 2019-06-28). Exported via <http://jsoc.stanford.edu/ajax/exportdata.html>
+22. <span id="ref-22"></span>aiapy documentation, `aiapy.calibrate.respike`. <https://aiapy.readthedocs.io/en/stable/api/aiapy.calibrate.respike.html>
+23. <span id="ref-23"></span>Boyle, A. (2003), "Scientists show how to make a UFO," msnbc.com / NBC News, 24 January 2003. <https://www.nbcnews.com/id/wbna3077760>
+24. <span id="ref-24"></span>Wolchover, N. (2012), "UFO Spaceship Orbiting the Sun, or a Camera Glitch?," Life's Little Mysteries / Live Science, republished by NBC News, 26 April 2012. <https://www.nbcnews.com/news/amp/wbna47190227>
+25. <span id="ref-25"></span>STEREO Science Center, "Triangular shaped object in STEREO data explained." <https://stereo-ssc.nascom.nasa.gov/artifacts/triangle/index.shtml>
