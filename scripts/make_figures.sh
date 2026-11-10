@@ -24,7 +24,8 @@ artifacts=(
 for a in "${artifacts[@]}"; do
   IFS='|' read -r name src size x y <<<"$a"
   magick "$orig/$src" -crop "${size}x${size}+${x}+${y}" +repage \
-    -filter point -resize 600x600 "$crops/$name.png"
+    -filter point -resize 600x600 \
+    -define png:exclude-chunk=date,time "$crops/$name.png"
 done
 
 # Annotated overviews: 1024px wide, yellow box around each crop region.

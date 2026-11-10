@@ -1,0 +1,3 @@
+.tmp-claude/
+.venv/
+__pycache__/
