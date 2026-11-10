@@ -45,7 +45,31 @@ about 6,800 on 2017-02-28, peaking at about 27,000 [[15](#ref-15)]. Level-1 AIA 
 are despiked on the ground with a neighbour-comparison algorithm, which is
 tuned for single-pixel events [[15](#ref-15)].
 
-## 2. Data
+## 2. Summary
+
+| ID | Image | Classification | Confidence |
+|----|-------|----------------|------------|
+| A1 | EUVI 195 Å, 2010-04-25 | Cosmic ray / particle hit (compression-distorted) | 90–97 % |
+| A2 | AIA 335 Å, 2013-02-24 | Particle hit with column trail | 92–98 % |
+| A3 | AIA 193 Å, 2017-06-20 | Particle hit with column trail | 92–98 % |
+| A4a | AIA 304 Å composite, 2019-06-28 (upper left) | Particle hit with column trail | 92–98 % |
+| A4b | AIA 304 Å composite, 2019-06-28 (lower left) | Particle hit with column trail | 92–98 % |
+
+Secondary finding (Section 5): the AIA trails are charge spread along
+detector columns from the hit's brightest pixels, not part of the
+particle's path (80–92 %). The specific mechanism, charge-transfer
+trailing, is less certain (45–65 %).
+
+**On the confidence intervals:** they are subjective credence ranges
+based on the evidence in Sections 4 and 5, not statistical intervals from
+repeated measurement. The lower bound reflects how well the evidence
+supports the classification against the alternatives considered. The upper
+bound reflects what is still unknown. All five features have now been
+checked in the science data, not only the browse images. The remaining
+uncertainty is mostly that no single exposure can rule out every rare
+alternative.
+
+## 3. Data
 
 | ID | Instrument / channel | Observation (UT) | Image size | Artifact centre (x, y) px |
 |----|----------------------|------------------|------------|---------------------------|
@@ -117,30 +141,6 @@ python3 -m venv .venv && .venv/bin/pip install astropy numpy pillow
 .venv/bin/python -I scripts/euvi_level0.py data/stereo/20100425_111030_n4euA.fts images/level0
 .venv/bin/python -I scripts/aia_level1.py data/aia images/level1
 ```
-
-## 3. Summary
-
-| ID | Image | Classification | Confidence |
-|----|-------|----------------|------------|
-| A1 | EUVI 195 Å, 2010-04-25 | Cosmic ray / particle hit (compression-distorted) | 90–97 % |
-| A2 | AIA 335 Å, 2013-02-24 | Particle hit with column trail | 92–98 % |
-| A3 | AIA 193 Å, 2017-06-20 | Particle hit with column trail | 92–98 % |
-| A4a | AIA 304 Å composite, 2019-06-28 (upper left) | Particle hit with column trail | 92–98 % |
-| A4b | AIA 304 Å composite, 2019-06-28 (lower left) | Particle hit with column trail | 92–98 % |
-
-Secondary finding (Section 5): the AIA trails are charge spread along
-detector columns from the hit's brightest pixels, not part of the
-particle's path (80–92 %). The specific mechanism, charge-transfer
-trailing, is less certain (45–65 %).
-
-**On the confidence intervals:** they are subjective credence ranges
-based on the evidence in Sections 4 and 5, not statistical intervals from
-repeated measurement. The lower bound reflects how well the evidence
-supports the classification against the alternatives considered. The upper
-bound reflects what is still unknown. All five features have now been
-checked in the science data, not only the browse images. The remaining
-uncertainty is mostly that no single exposure can rule out every rare
-alternative.
 
 ## 4. Results
 
@@ -464,6 +464,53 @@ from the hit's brightest pixels, rather than part of the particle tracks:
 The EUVI hit (A1) shows no such trail. Its distortion is better explained
 by on-board ICER compression [[5](#ref-5), [16](#ref-16), [20](#ref-20)].
 
+## 6. Not objects near the Sun
+
+Features like these are regularly mistaken for real objects near the Sun,
+and sometimes promoted as UFOs or alien spacecraft. In 2003 the SOHO team
+responded to such claims with a tongue-in-cheek guide to making a "UFO".
+The guide enlarges and smooths one of the cosmic-ray marks found in almost
+every SOHO EUV image into a saucer [[23](#ref-23)]. In 2012 a "jointed
+spaceship" in a SOHO/LASCO C2 image was identified by the Naval Research
+Laboratory as "merely a collection of streaks left by cosmic rays",
+pointing out that "these artifacts do not persist from image to image"
+[[24](#ref-24)]. Other artifact classes are misread the same way. A
+geometric "object" in STEREO HI2-B data in December 2011 turned out to be
+an internal reflection of Venus [[25](#ref-25)], and corrupted images can
+superimpose data from different telescopes [[10](#ref-10)].
+
+Five independent lines of evidence show that the features studied here
+are energetic-particle hits rather than objects in space:
+
+1. **They exist for a single exposure.** A2 is absent from the frames
+   12 s before and after; the others are absent minutes before and after.
+   A real object moves continuously and appears in consecutive frames, as
+   comets do in SOHO and STEREO images [[3](#ref-3), [23](#ref-23)].
+   A particle hit lasts only for the exposure in which it strikes.
+2. **They are sharper than the telescope can image.** Anything in the sky
+   is seen through the telescope optics, which blur a point to about
+   1.5 arcsec, roughly 2.5 AIA pixels [[12](#ref-12)]. In A2, A4a and
+   A4b the brightness falls from 11,900–16,900 DN to under 210 DN between
+   one pixel and the next. Only charge deposited directly in the detector
+   can have edges that sharp.
+3. **They follow the detector, not the sky.** All four AIA trails run
+   exactly along detector columns, and in A4a several trails start
+   separately from each bright pixel (Section 5). A physical object would
+   have no reason to line up with the pixel grid.
+4. **They appear in one camera only.** The A4 features are in the 304 Å
+   exposure but not in the 211 Å and 171 Å exposures taken 8 s earlier
+   with an overlapping field of view.
+5. **They are what particle hits look like, and they are common.** The
+   AIA despiking algorithm, built to recognise particle hits, flagged 96–99 %
+   of the signal in each feature. The same frames each contain between
+   15,713 and 51,876 flagged spikes [[21](#ref-21)], so a few large ones
+   in any image are expected.
+
+Taken literally, the features would also be implausibly large. One AIA
+pixel spans about 435 km at the Sun's distance (0.6 arcsec at 1 AU), so
+A2's browse-image trail of about 490 px would be an object roughly
+210,000 km long, about 15 % of the Sun's diameter, if it were near the Sun.
+
 ## References
 
 1. <a id="ref-1"></a>STEREO Science Center, "Image artifacts." <https://stereo-ssc.nascom.nasa.gov/artifacts/artifacts.shtml>
@@ -488,3 +535,6 @@ by on-board ICER compression [[5](#ref-5), [16](#ref-16), [20](#ref-20)].
 20. <a id="ref-20"></a>STEREO Science Center, SECCHI Level-0 data archive, EUVI-A file `20100425_111030_n4euA.fts`. <https://stereo-ssc.nascom.nasa.gov/data/ins_data/secchi/L0/a/img/euvi/20100425/20100425_111030_n4euA.fts>
 21. <a id="ref-21"></a>Joint Science Operations Center (JSOC), Stanford University, SDO/AIA data series `aia.lev1_euv_12s`, image and spikes segments for records 78809615, 78809622 and 78809629 (335 Å, 2013-02-24), 157692406 (193 Å, 2017-06-20) and 194794212 (304 Å, 2019-06-28). Exported via <http://jsoc.stanford.edu/ajax/exportdata.html>
 22. <a id="ref-22"></a>aiapy documentation, `aiapy.calibrate.respike`. <https://aiapy.readthedocs.io/en/stable/api/aiapy.calibrate.respike.html>
+23. <a id="ref-23"></a>Boyle, A. (2003), "Scientists show how to make a UFO," msnbc.com / NBC News, 24 January 2003. <https://www.nbcnews.com/id/wbna3077760>
+24. <a id="ref-24"></a>Wolchover, N. (2012), "UFO Spaceship Orbiting the Sun, or a Camera Glitch?," Life's Little Mysteries / Live Science, republished by NBC News, 26 April 2012. <https://www.nbcnews.com/news/amp/wbna47190227>
+25. <a id="ref-25"></a>STEREO Science Center, "Triangular shaped object in STEREO data explained." <https://stereo-ssc.nascom.nasa.gov/artifacts/triangle/index.shtml>
