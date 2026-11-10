@@ -1,7 +1,8 @@
 # Classification of Non-Solar Artifacts in Four STEREO/EUVI and SDO/AIA Browse Images
 
-**Author:** MonkeeSage &lt;monkeesage@gmail.com&gt;
-**Date:** 2026-11-09 (revised 2026-11-10 with Level-0 and Level-1 data)
+**Author:** MonkeeSage
+
+**Date:** 2026-11-09
 
 ## Abstract
 
@@ -23,6 +24,21 @@ horizontal edge of the image. One hit's trails start separately from each
 bright pixel of its track. This indicates charge spreading along columns
 inside the detector rather than the particle's own path. We discuss
 charge-transfer trailing as the most likely, but unconfirmed, mechanism.
+
+## Contents
+
+1. [Introduction](#1-introduction)
+2. [Summary](#2-summary)
+3. [Data](#3-data)
+4. [Results](#4-results)
+   - [A1 — STEREO-A EUVI 195 Å, 2010-04-25](#a1)
+   - [A2 — SDO/AIA 335 Å, 2013-02-24](#a2)
+   - [A3 — SDO/AIA 193 Å, 2017-06-20](#a3)
+   - [A4a / A4b — SDO/AIA 304 Å composite, 2019-06-28](#a4)
+5. [Discussion: why do the AIA hits have one-sided trails?](#5-discussion-why-do-the-aia-hits-have-one-sided-trails)
+6. [Not objects near the Sun](#6-not-objects-near-the-sun)
+
+[References](#references)
 
 ## 1. Introduction
 
@@ -144,6 +160,8 @@ python3 -m venv .venv && .venv/bin/pip install astropy numpy pillow
 
 ## 4. Results
 
+<a id="a1"></a>
+
 ### A1 — STEREO-A EUVI 195 Å, 2010-04-25 (middle-right green blob)
 
 [![A1 crop](images/crops/A1_euvi195_2010-04-25.png)](images/crops/A1_euvi195_2010-04-25.png)
@@ -221,6 +239,8 @@ remaining doubt is that a single exposure cannot rule out every rare
 alternative, such as a brief point-like glint from debris. Such an event
 would be unusual for an EUV imager.
 
+<a id="a2"></a>
+
 ### A2 — SDO/AIA 335 Å, 2013-02-24 (upper-right blue streak)
 
 [![A2 crop](images/crops/A2_aia335_2013-02-24.png)](images/crops/A2_aia335_2013-02-24.png)
@@ -283,6 +303,8 @@ contains the brightest pixels of the frame, and was almost entirely
 flagged by the AIA despiking algorithm, which was designed to find
 particle hits.
 
+<a id="a3"></a>
+
 ### A3 — SDO/AIA 193 Å, 2017-06-20 (upper-left orange blob and streak)
 
 [![A3 crop](images/crops/A3_aia193_2017-06-20.png)](images/crops/A3_aia193_2017-06-20.png)
@@ -322,6 +344,8 @@ Data: JSOC `aia.lev1_euv_12s`, T_OBS 2017-06-20T12:56:17.843 [[21](#ref-21)]
 
 **Classification:** Energetic-particle hit with a column-direction trail.
 **Confidence: 92–98 %.**
+
+<a id="a4"></a>
 
 ### A4a / A4b — SDO/AIA 304/211/171 composite, 2019-06-28 (upper-left and lower-left red blobs and streaks)
 
